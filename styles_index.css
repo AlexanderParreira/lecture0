@@ -1,0 +1,61 @@
+
+        h1, h2 {
+            color: gray;
+        }
+
+        input[type=text] {
+            background-color: red;
+        }
+
+        input[type=password] {
+            background-color: yellow;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            background-color: green;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+
+        @media print {
+            .screen-only {
+                display: none;
+            }
+        }
+
+        @media (min-width: 800px) {
+            h1::before {
+                content: "Wellcome to My Web Page!";
+            }
+        }
+
+        @media (max-width: 799px) {
+            h1::before {
+                content: "Wellcome!";
+            }
+        }
+        .grid{
+            background-color: green;
+            display: grid;
+            padding: 20px;
+            grid-column-gap:20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+
+        .grid-item{
+            background-color: lightgray;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .row > div{
+            padding: 20px;
+            background-color: teal;
+            border: 2px solid black;
+        }
